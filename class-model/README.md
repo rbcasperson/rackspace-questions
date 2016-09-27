@@ -1,5 +1,7 @@
 # Employee Class Model
 
+Please find my full solution [here](./employees.py). A complete description of my logic and organization is below.
+
 ### Employee
 
 The `Employee` class represents a typical full time employee.
