@@ -1,6 +1,6 @@
 # Employee Class Model
 
-Please find my full solution [here](./employees.py). A complete description of my logic and organization is below.
+Please find my full solution [here](./staff.py). A complete description of my logic and organization is below.
 
 ### Employee
 
@@ -29,7 +29,7 @@ The `Contractor` and `Temporary` classes each extend `IndependentWorker`. They s
 ## Example
 
 These class instances and method calls:
-```
+```py
 a = Employee("Aaron", "Adams", 40, 14)
 b = Contractor("Bill", "Bowen", 30, "Company B")
 c = Temporary("Charlie", "Clown", 25, "Company C")
