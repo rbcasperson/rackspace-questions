@@ -12,18 +12,18 @@ def CompareSwapSizeInMb(self, swap1, swap2):
 
 ### My Review
 
-##### Firstly
+#### Firstly
 _What does this function do exactly?_
 
-I see that we are comparing two swap sizes and returning a boolean based on if one is bigger than the other, but if I were to only see the name of the function `CompareSwapSizeInMb()`, I would anticipate that the funcion would either return nothing, or maybe some sort of readable report based on the two swap sizes.
+I see that we are comparing two swap sizes and returning a boolean that states if one swap is bigger than the other. However, if I were to only see the name of the function `CompareSwapSizeInMb()`, I would anticipate that the funcion would either return nothing, or maybe some sort of readable report based on the two swap sizes.
 
-I suggest to rename the function to make it clear that a boolean will be returned.
+I suggest to **rename the function** to make it clear that a boolean will be returned.
 
-My suggestion is something like `swap_is_smaller()`, but a further clarification of what the returned boolean will be used for may alter my suggestion.
+My suggestion is something like `swap_is_smaller()`, but further clarification of what the returned boolean will be used for may alter my suggestion.
 
-Also, note that my suggested name follows expected python naming conventions of lowercase words separated by underscores
+Also, note that my suggested name follows expected python naming conventions of **lowercase words separated by underscores**.
 
-##### Condense The Logic
+#### Condense The Logic
 
 The logic of this function is clearly laid out, but it could easily be condensed.
 
