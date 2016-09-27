@@ -16,8 +16,7 @@ class Employee(Object):
 
 class IndependentWorker(Employee):
     def __init__(self, first_name, last_name, pay_rate, agency_name, label):
-        default_yearly_vacation = 0
-        Employee.__init__(self, first_name, last_name, pay_rate, default_yearly_vacation)
+        Employee.__init__(self, first_name, last_name, pay_rate, 0)
         self.agency_name = agency_name
         self.label = label
 
@@ -28,7 +27,9 @@ class IndependentWorker(Employee):
         return self.agency_name
 
 class Contractor(IndependentWorker):
-    pass
+    def __init__(self, first_name, last_name, pay_rate, agency_name):
+        IndependentWorker.__init__(self, first_name, last_name, pay_rate, agency_name, "C")
 
 class Temporary(IndependentWorker):
-    pass
+    def __init__(self, first_name, last_name, pay_rate, agency_name):
+        IndependentWorker.__init__(self, first_name, last_name, pay_rate, agency_name, "T")
